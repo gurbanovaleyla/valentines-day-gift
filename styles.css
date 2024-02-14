@@ -1,0 +1,57 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #ffecf2;
+  color: #000;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-out;
+}
+
+.parallax-bg {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+  padding: 20px;
+  opacity: 1;
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+#love-meter-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+  position: relative;
+  z-index: 1;
+}
+
+#love-meter {
+  width: 100%;
+}
+
+#love-value,
+#love-message {
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: bold;
+}
